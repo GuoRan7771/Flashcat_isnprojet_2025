@@ -189,9 +189,7 @@ def main():
                 retry_list.clear()
                 show_word(0)
             else:
-                # 会话结束时先更新完成记录
                 record_session_completion(session_number)
-                # 然后更新 state.json 中的 day 值
                 increment_state_day()
                 messagebox.showinfo("Fini", "Session terminée avec succès !")
                 root.destroy()
@@ -205,7 +203,6 @@ def main():
         show_word(0)
     else:
         messagebox.showinfo("Info", "Aucun mot pour cette session.")
-        # 即使无词也要更新天数
         increment_state_day()
         root.destroy()
 
