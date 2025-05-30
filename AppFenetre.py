@@ -259,13 +259,14 @@ class ReglageWindow(tk.Toplevel):
             self.csv_path.set(p)
             self.master.reglage["csv_path"] = p
             self.lift()
-            self.run_initialiser()  # Lance l'initialisation après le chargement du CSV
+            
 
 
     def save(self):
         # Met à jour le chemin CSV en mémoire
         self.master.reglage.update({"csv_path": self.csv_path.get()})
         # Sauvegarde dans le state.json
+        self.run_initialiser()  # Lance l'initialisation après le chargement du CSV
         try:
             state = {}
             if os.path.exists(STATE_FILE):
