@@ -1,87 +1,133 @@
-# INTRO FR  
+# Flashcat : Votre assistant personnalisé pour l'apprentissage du vocabulaire
 
-## Flashcat
-1. D'abord, il faut lancer `APPFenetre.py`  
-2. Ensuite, ajoutez le fichier CSV dans les réglages  
-3. Vous pouvez modifier le nom d'utilisateur et également déposer une photo comme avatar  
-4. **Initialiser** peut être utilisé pour réinitialiser la progression d’apprentissage.  
-**Attention :** après avoir téléversé un nouveau fichier CSV, la progression est automatiquement réinitialisée.  
+Ce projet est un logiciel conçu pour vous aider à mémoriser du vocabulaire. Vous pouvez importer vos propres listes de mots (par exemple, français-anglais, ou toute autre langue que vous apprenez), puis les étudier et les réviser à l'aide d'un système similaire aux flashcards (cartes mémoire). Il organise également intelligemment votre plan de révision en fonction de vos progrès.
 
-## state.json
-1. Le champ `day` peut être modifié pour effectuer des tests  
-2. Chemin du fichier CSV  
-3. Sessions déjà terminées  
+## I. Prérequis : S'assurer que Python est installé
 
-## profil.json
-1. `username`  
-2. `avatar_path`  
+Avant de commencer, veuillez vous assurer que Python est installé sur votre ordinateur (version recommandée : Python 3.6 ou ultérieure). Vous pouvez le vérifier en ouvrant un terminal ou une invite de commandes et en tapant `python --version` ou `python3 --version`. S'il n'est pas installé, veuillez d'abord le télécharger depuis le site officiel de Python (python.org) et l'installer.
 
-## level_info.txt (aucune opération supplémentaire requise, laisser tel quel)  
-1. Chemin du fichier CSV à apprendre  
-2. Numéro de la session actuellement choisie  
+## II. Obtention des fichiers du projet
 
-## ex_Français_English et ex_TJgaokao.csv  
-1. Les deux fichiers CSV sont des exemples de listes de vocabulaire  
+Vous avez deux manières d'obtenir les fichiers du projet :
 
-## carte  
-1. Progression actuelle   
+**Méthode 1 : Via Git Clone (recommandé si vous êtes familier avec Git)**
 
-# INTRO EN  
+1.  **Installer Git** : Si Git n'est pas encore installé sur votre ordinateur, veuillez d'abord le télécharger depuis le site officiel de Git (git-scm.com) et l'installer.
+2.  **Ouvrir un terminal/invite de commandes/Git Bash**.
+3.  **Clôner le dépôt** : Entrez la commande suivante, en remplaçant `[adresse_du_dépôt]` par l'URL réelle du dépôt Git du projet (par exemple `https://github.com/nomdutilisateur/nomdudepot.git`) :
+    ```bash
+    git clone [adresse_du_dépôt]
+    ```
+    Appuyez sur Entrée. Git téléchargera tous les fichiers du projet dans un dossier portant le nom du dépôt (par exemple `finnnnal_isnprojet`) dans votre répertoire actuel.
 
-## Flashcat
-1. First, you need to run `APPFenetre.py`  
-2. Then add the CSV file in the settings(Reglages)  
-3. You can also modify the username and upload a photo as an avatar  
-4. *Initialiser* can be used to reset learning progress.  
-**Note:** After uploading a new CSV file, the progress is automatically reset.  
+**Méthode 2 : Télécharger l'archive ZIP**
 
-## state.json
-1. `day` can be changed for testing purposes  
-2. Path to the CSV file  
-3. Sessions that have been completed  
+1.  **Télécharger les fichiers du projet** : Vous devez télécharger l'archive ZIP complète du projet à partir du lien du dépôt GitHub qui vous a été fourni. Sur la page GitHub, il y a généralement un bouton vert "Code", cliquez dessus, puis sélectionnez "Download ZIP" (Télécharger ZIP).
+2.  **Décompresser les fichiers** : Une fois le téléchargement terminé, trouvez le fichier ZIP (généralement dans votre dossier "Téléchargements"), faites un clic droit dessus et sélectionnez "Extraire tout..." ou "Extract All...". Choisissez un emplacement facile à retrouver pour le dossier décompressé (par exemple, le Bureau ou Documents). Après la décompression, vous obtiendrez un dossier contenant tous les fichiers du projet, dont le nom est généralement `finnnnal_isnprojet-main` ou similaire.
 
-## profil.json
-1. `username`  
-2. `avatar_path`  
+## III. Lancer le programme Flashcat
 
-## level_info.txt (no additional operation required, leave it as is)  
-1. Path to the CSV file to be studied  
-2. Number of the session currently selected  
+1.  **Ouvrir un terminal/invite de commandes** :
 
-## ex_Français_English and ex_TJgaokao.csv  
-1. Both CSV files are examples of vocabulary lists
+      * Windows : Appuyez sur la touche `Win`, tapez `cmd` et ouvrez l'invite de commandes.
+      * macOS/Linux : Ouvrez le programme "Terminal".
 
-## carte  
-1. current progress  
+2.  **Accéder au dossier du projet** :
+    Vous devez utiliser la commande `cd` (change directory, changer de répertoire) pour naviguer jusqu'au dossier du projet que vous venez d'obtenir.
+    Par exemple, si vous avez cloné ou décompressé le projet dans un dossier nommé `finnnnal_isnprojet` sur votre Bureau :
 
-# 中文介绍  
+      * Windows : `cd Desktop\finnnnal_isnprojet` (adaptez le chemin selon votre emplacement)
+      * macOS/Linux : `cd Desktop/finnnnal_isnprojet` (adaptez le chemin selon votre emplacement)
+        Entrez la commande et appuyez sur Entrée.
 
-## Flashcat
-1. 首先运行 `APPFenetre.py`  
-2. 然后在设置(Reglages)中添加 CSV 文件  
-3. 你也可以点击头像修改用户名，或者上传一张照片作为头像
-4. Initialiser可以用来重制学习进度，注意重新上传csv文件后进度自动重制
+3.  **Lancer le programme principal** :
+    Dans le terminal/invite de commandes, assurez-vous d'être dans le bon dossier du projet, puis entrez la commande suivante et appuyez sur Entrée :
 
-## state.json
-1. `day` 可以更改，用于测试  
-2. CSV 文件的路径  
-3. 已完成的 关卡(session) 列表  
+    ```bash
+    python AppFenetre.py
+    ```
 
-## profil.json
-1. 用户名（`username`）  
-2. 头像路径（`avatar_path`）  
+    (Sur certains systèmes, si la commande `python` ne fonctionne pas, essayez `python3 AppFenetre.py`)
 
-## level_info.txt（无需额外操作，保持原样）  
-1. 当前学习的 CSV 文件路径  
-2. 当前选择的 关卡(session) 编号  
+    Si tout se passe bien, vous devriez voir une fenêtre de programme intitulée "Accueil" apparaître.
 
-## ex_Français_English 与 ex_TJgaokao.csv  
-1. 这两个 CSV 文件是词汇表的示例文件  
+## IV. Fonctionnalités principales de Flashcat et étapes d'utilisation
 
-## carte  
-1. 当前进度  
+Maintenant que le programme est lancé, voyons comment l'utiliser.
 
+1.  **Présentation de l'interface principale ("Accueil")** :
 
+      * **Réglage** : Configurer le programme, l'action la plus importante étant d'importer votre liste de vocabulaire.
+      * **Jouer** : Choisir une session d'étude et commencer à apprendre les mots.
+      * **Carte** : Visualiser votre progression globale d'apprentissage.
+      * **Quitter** : Fermer le programme.
+      * **Avatar et nom d'utilisateur en haut à droite** : Cliquez pour modifier votre nom d'utilisateur et votre avatar.
+      * **Jour actuel** : Affiche le jour en cours. Le programme simule les jours pour planifier les révisions.
+      * **+1 jour** : Fait avancer manuellement le programme au jour suivant, ce qui affecte les mots à réviser.
 
+2.  **Première utilisation : Configurer la liste de vocabulaire (très important \!)**
 
+      * Cliquez sur le bouton **"Réglage"** sur l'interface principale.
+      * Dans la fenêtre "Réglage" qui s'ouvre, cliquez sur le bouton **"Upload CSV" (Téléverser CSV)**.
+      * Une boîte de dialogue de sélection de fichier s'ouvrira. Vous devez choisir un fichier de liste de vocabulaire au format CSV.
+          * Le projet inclut deux fichiers d'exemple : `ex_Français_English.csv` (vocabulaire français-anglais) et `ex_TJgaokao.csv` (vocabulaire pour un examen spécifique, probablement chinois-anglais). Vous pouvez commencer par essayer avec ces fichiers.
+          * Un fichier CSV est un fichier texte simple que vous pouvez ouvrir avec Excel ou un éditeur de texte. Chaque ligne représente un mot, et le mot et sa traduction sont séparés par un point-virgule `;`. Par exemple : `bonjour;hello`.
+      * Une fois le fichier CSV sélectionné, son chemin d'accès s'affichera sous le bouton "Upload CSV".
+      * **Remarque importante** : Selon la description du projet, après avoir téléversé un nouveau fichier CSV, la progression est automatiquement réinitialisée. Si vous souhaitez simplement utiliser un fichier précédemment téléversé, assurez-vous que le chemin est correct, puis cliquez sur **"Sauvegarder"** et fermez la fenêtre des réglages.
 
+3.  **Personnalisation (optionnel)**
+
+      * Sur l'interface principale "Accueil", cliquez sur l'avatar circulaire en haut à droite ou sur le nom d'utilisateur en dessous (par défaut "Guo").
+      * La fenêtre "Profil" s'ouvrira.
+      * **Modifier le nom d'utilisateur** : Dans le champ de saisie à côté de "Username:", entrez le nom que vous souhaitez.
+      * **Téléverser un avatar** : Cliquez sur le bouton "Upload Avatar" et choisissez une image que vous aimez comme avatar.
+      * Une fois les modifications terminées, cliquez sur **"Sauvegarder"**.
+
+4.  **Commencer à apprendre ("Jouer")**
+
+      * Assurez-vous d'avoir téléversé et sauvegardé une liste de vocabulaire CSV dans "Réglage".
+      * Cliquez sur le bouton **"Jouer"** sur l'interface principale.
+      * Une fenêtre "🎯 Choisir une session" s'ouvrira. Les mots sont divisés en plusieurs "Session" (par défaut, 5 mots par session). Les sessions déjà terminées apparaîtront en gris et ne seront pas cliquables.
+      * Choisissez un bouton de session que vous souhaitez étudier (par exemple "Session 1").
+      * Une nouvelle fenêtre d'apprentissage s'ouvrira (titrée par exemple "Session 1"), c'est l'interface pour mémoriser les mots :
+          * **Affichage du mot** : Généralement, un mot est affiché en premier (par exemple, en anglais).
+          * **Afficher la signification** : Cliquez sur ce bouton pour afficher la traduction du mot (par exemple, en français).
+          * **Boutons de feedback** : Après avoir vu la réponse, cliquez en fonction de votre maîtrise :
+              * **Je connais** : Indique que vous connaissez déjà ce mot.
+              * **Je suis incertain** : Indique que vous avez une vague idée, mais que vous ne le maîtrisez pas complètement.
+              * **Je ne connais pas** : Indique que vous ne le connaissez pas du tout ou que vous vous êtes trompé.
+          * Le programme enregistrera votre apprentissage en fonction de vos réponses. Les mots mal répondus ou incertains réapparaîtront plus tard pour révision.
+          * Une fois tous les mots d'une session terminés, un message s'affichera : "Session terminée avec succès \!". Vous pouvez alors fermer cette fenêtre d'apprentissage.
+
+5.  **Consulter la progression ("Carte")**
+
+      * Cliquez sur le bouton **"Carte"** sur l'interface principale.
+      * Une fenêtre s'ouvrira, affichant un graphique et un pourcentage de votre progression globale pour la liste de vocabulaire actuelle. Un point rouge indique votre position actuelle.
+
+6.  **Simuler le passage du temps ("+1 jour")**
+
+      * Les logiciels d'apprentissage utilisent souvent le principe de la "répétition espacée" pour aider à la mémorisation, c'est-à-dire que les mots appris réapparaissent quelques jours plus tard pour être révisés.
+      * Cliquez sur le bouton **"+1 jour"** sur l'interface principale, le programme considérera qu'un jour s'est écoulé. Cela mettra à jour l'état de révision des mots. Si vous cliquez dessus après avoir terminé votre session d'aujourd'hui, lorsque vous ouvrirez "Jouer" le lendemain, des mots à réviser pourraient apparaître.
+
+7.  **Réinitialiser la progression de l'apprentissage**
+
+      * Si vous souhaitez recommencer à apprendre une liste de vocabulaire depuis le début, ou si vous changez de liste :
+          * Méthode 1 : Dans la fenêtre "Réglage", cliquez sur le bouton **"Initialiser"**. Cela réinitialisera la progression de la liste de vocabulaire actuellement sélectionnée.
+          * Méthode 2 : Comme mentionné précédemment, **téléverser un nouveau fichier CSV dans "Réglage" réinitialise automatiquement la progression**.
+
+## V. Description des fichiers (à titre informatif)
+
+Le dossier du projet contient d'autres fichiers que vous n'aurez généralement pas besoin de modifier directement, mais il est bon de savoir à quoi ils servent :
+
+  * `profil.json` : Sauvegarde votre nom d'utilisateur et le chemin d'accès à votre image d'avatar.
+  * `state.json` : Sauvegarde l'état du programme, comme le jour actuel, le chemin du fichier CSV utilisé et les sessions d'étude terminées.
+  * `level_info.txt` : Enregistre le chemin du fichier CSV en cours d'étude et le numéro de la session sélectionnée ; le programme le gère automatiquement, aucune opération supplémentaire de l'utilisateur n'est requise.
+  * `ex_Français_English.csv` et `ex_TJgaokao.csv` : Fichiers d'exemples de listes de vocabulaire. Vous pouvez vous référer à leur format pour créer vos propres listes de vocabulaire CSV avec Excel ou un éditeur de texte.
+
+## VI. Remarques importantes
+
+  * **Chemins des fichiers** : Essayez de ne pas déplacer le dossier du projet ou les fichiers CSV, sinon le programme pourrait ne pas les retrouver. Si vous les déplacez, vous devrez à nouveau téléverser le fichier CSV dans "Réglage".
+  * **Fermer le programme** : Une fois votre session d'étude terminée, vous pouvez cliquer sur le bouton "Quitter" de l'interface principale ou simplement fermer la fenêtre.
+  * **Messages d'erreur** : Si un message d'erreur apparaît pendant l'utilisation (généralement une petite fenêtre), lisez attentivement le message pour voir si vous pouvez en trouver la cause (par exemple, cliquer sur "Jouer" sans avoir sélectionné de fichier CSV).
+
+J'espère que ce tutoriel vous aidera à utiliser Flashcat sans problème \! C'est un excellent outil d'apprentissage, je vous souhaite de bien apprendre et de voir votre vocabulaire s'enrichir rapidement \!
