@@ -11,7 +11,21 @@ SESSION_SIZE = 5
 STATE_FILE = "state.json" 
 
 class SessionSelecteur(tk.Toplevel):
+    """
+    Fenêtre permettant de sélectionner une session de révision.
+
+    Cette interface liste toutes les sessions possibles calculées
+    à partir d’un fichier CSV de vocabulaire et affiche l’état
+    de progression (sessions terminées désactivées).
+    """
     def __init__(self, master, csv_path):
+        """
+        Initialise la fenêtre de sélection de session.
+
+        Args:
+            master: Fenêtre principale tkinter.
+            csv_path (str): Chemin vers le fichier CSV de mots.
+        """
         super().__init__(master)
         self.title("🎯 Choisir une session")
         self.geometry("700x500")
@@ -33,7 +47,13 @@ class SessionSelecteur(tk.Toplevel):
 
     def is_session_mastered(self,session_num):
         """
-        Retourne True si session_num figure dans le champ 'session' de state.json
+        Vérifie si une session a déjà été complétée.
+
+        Args:
+            session_num (int): Numéro de la session à vérifier.
+
+        Returns:
+            bool: True si la session est marquée comme complétée dans state.json.
         """
         if not os.path.exists(STATE_FILE):
             return False
@@ -46,6 +66,10 @@ class SessionSelecteur(tk.Toplevel):
         return session_num in completed_sessions
 
     def create_ui(self):
+        """
+        Crée l’interface graphique avec les boutons de sessions
+        et une barre de défilement si nécessaire.
+        """
         # En-tête de la fenêtre
         tk.Label(
             self,
@@ -116,6 +140,9 @@ class SessionSelecteur(tk.Toplevel):
         ).pack(pady=(10, 15))
 
     def start_level(self, level_num):
+        """
+        Commence à jouer en notant les infos de session en level_info.txt.
+        """
         try:
             # Écriture des informations de session dans level_info.txt
             with open("level_info.txt", "w", encoding="utf-8") as f:
