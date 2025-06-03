@@ -18,12 +18,12 @@ Vous avez deux manières d'obtenir les fichiers du projet :
     ```bash
     git clone [adresse_du_dépôt]
     ```
-    Appuyez sur Entrée. Git téléchargera tous les fichiers du projet dans un dossier portant le nom du dépôt (par exemple `finnnnal_isnprojet`) dans votre répertoire actuel.
+    Appuyez sur Entrée. Git téléchargera tous les fichiers du projet dans un dossier portant le nom du dépôt (par exemple `Flashcat_isnprojet_2025`) dans votre répertoire actuel.
 
 **Méthode 2 : Télécharger l'archive ZIP**
 
 1.  **Télécharger les fichiers du projet** : Vous devez télécharger l'archive ZIP complète du projet à partir du lien du dépôt GitHub qui vous a été fourni. Sur la page GitHub, il y a généralement un bouton vert "Code", cliquez dessus, puis sélectionnez "Download ZIP" (Télécharger ZIP).
-2.  **Décompresser les fichiers** : Une fois le téléchargement terminé, trouvez le fichier ZIP (généralement dans votre dossier "Téléchargements"), faites un clic droit dessus et sélectionnez "Extraire tout..." ou "Extract All...". Choisissez un emplacement facile à retrouver pour le dossier décompressé (par exemple, le Bureau ou Documents). Après la décompression, vous obtiendrez un dossier contenant tous les fichiers du projet, dont le nom est généralement `finnnnal_isnprojet-main` ou similaire.
+2.  **Décompresser les fichiers** : Une fois le téléchargement terminé, trouvez le fichier ZIP (généralement dans votre dossier "Téléchargements"), faites un clic right dessus et sélectionnez "Extraire tout..." ou "Extract All...". Choisissez un emplacement facile à retrouver pour le dossier décompressé (par exemple, le Bureau ou Documents). Après la décompression, vous obtiendrez un dossier contenant tous les fichiers du projet, dont le nom est généralement `Flashcat_isnprojet_2025-main` ou similaire.
 
 ### 2. Installer les dépendances (pip)
 
@@ -34,9 +34,9 @@ Avant de lancer le programme, vous devez installer les bibliothèques Python né
     * macOS/Linux : Ouvrez le programme "Terminal".
 
 2.  **Accéder au dossier du projet** :
-    Utilisez la commande `cd` pour naviguer jusqu'au dossier du projet que vous venez d'obtenir. Par exemple, si vous avez cloné ou décompressé le projet dans un dossier nommé `finnnnal_isnprojet` sur votre Bureau :
-    * Windows : `cd Desktop\finnnnal_isnprojet` (adaptez le chemin selon votre emplacement)
-    * macOS/Linux : `cd Desktop/finnnnal_isnprojet` (adaptez le chemin selon votre emplacement)
+    Utilisez la commande `cd` pour naviguer jusqu'au dossier du projet que vous venez d'obtenir. Par exemple, si vous avez cloné ou décompressé le projet dans un dossier nommé `Flashcat_isnprojet_2025` sur votre Bureau :
+    * Windows : `cd Desktop\Flashcat_isnprojet_2025` (adaptez le chemin selon votre emplacement)
+    * macOS/Linux : `cd Desktop/Flashcat_isnprojet_2025` (adaptez le chemin selon votre emplacement)
     Entrez la commande et appuyez sur Entrée.
 
 3.  **Installer Pillow** :
@@ -96,7 +96,7 @@ Maintenant que le programme est lancé, voyons comment l'utiliser.
 
     * Assurez-vous d'avoir téléversé et sauvegardé une liste de vocabulaire CSV dans "Réglage".
     * Cliquez sur le bouton **"Jouer"** sur l'interface principale.
-    * Une fenêtre "🎯 Choisir une session" s'ouvrira. Les mots sont divisés en plusieurs "Session" (par défaut, 5 mots par session). Les sessions déjà terminées apparaîtront en gris et ne seront pas cliquables.
+    * Une fenêtre "🎯 Choisir une session" s'ouvrira. Les mots sont divisés en plusieurs "Session" (par default, 5 mots par session). Les sessions déjà terminées apparaîtront en gris et ne seront pas cliquables.
     * Choisissez un bouton de session que vous souhaitez étudier (par exemple "Session 1").
     * Une nouvelle fenêtre d'apprentissage s'ouvrira (titrée par exemple "Session 1"), c'est l'interface pour mémoriser les mots :
         * **Affichage du mot** : Généralement, un mot est affiché en premier (par exemple, en anglais).
