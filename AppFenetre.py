@@ -7,6 +7,7 @@ import os
 from SessionSelecteur import SessionSelecteur
 import subprocess
 import sys
+#N'oubilez pip install Pillow
 
 PROFIL_FILE = "profil.json"
 STATE_FILE = "state.json"

@@ -1,18 +1,18 @@
-musicien;musician;NonConnait;0;0
-enfant;child;NonConnait;0;0
-femme;woman;NonConnait;0;0
-village;village;NonConnait;0;0
-gare;train station;NonConnait;0;0
-orage;storm;NonConnait;0;0
-mère;mother;NonConnait;0;0
-homme;man;NonConnait;0;0
-carotte;carrot;NonConnait;0;0
-frère;brother;NonConnait;0;0
-ami;friend;NonConnait;0;0
-restaurant;restaurant;NonConnait;0;0
-neige;snow;NonConnait;0;0
-avion;plane;NonConnait;0;0
-salade;salad;NonConnait;0;0
+musicien;musician;Connait;3;0
+enfant;child;Connait;3;0
+femme;woman;Connait;3;0
+village;village;Connait;3;0
+gare;train station;Connait;3;0
+orage;storm;Connait;2;0
+mère;mother;Connait;2;0
+homme;man;Connait;2;0
+carotte;carrot;Connait;2;0
+frère;brother;Connait;2;0
+ami;friend;Connait;1;0
+restaurant;restaurant;Connait;1;0
+neige;snow;Connait;1;0
+avion;plane;Connait;1;0
+salade;salad;Connait;1;0
 peur;scared;NonConnait;0;0
 chocolat;chocolate;NonConnait;0;0
 plafond;ceiling;NonConnait;0;0

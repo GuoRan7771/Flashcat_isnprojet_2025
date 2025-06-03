@@ -1,5 +1,9 @@
 {
-  "day": 1,
+  "day": 6,
   "csv_path": "/Users/guo/Downloads/isnprojet_98_QIFANWANG/ex_Francais_English.csv",
-  "session": []
+  "session": [
+    1,
+    2,
+    3
+  ]
 }
