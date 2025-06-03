@@ -140,4 +140,3 @@ Le dossier du projet contient d'autres fichiers que vous n'aurez généralement 
 * **Messages d'erreur** : Si un message d'erreur apparaît pendant l'utilisation (généralement une petite fenêtre), lisez attentivement le message pour voir si vous pouvez en trouver la cause (par exemple, cliquer sur "Jouer" sans avoir sélectionné de fichier CSV).
 
 J'espère que ce tutoriel vous aidera à utiliser Flashcat_isnprojet_2025 sans problème \! C'est un excellent outil d'apprentissage, je vous souhaite de bien apprendre et de voir votre vocabulaire s'enrichir rapidement \!
-```
